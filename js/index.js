@@ -43,16 +43,6 @@ $(document).ready(function () {
     $(".span5").fadeIn();
     $(this).fadeOut();
   });
-
-  $(".span6").click(function () {
-    $(this).fadeOut();
-    $("#clickMovie2").fadeIn();
-  });
-  $("#clickMovie2").click(function () {
-    $(".span6").fadeIn();
-    $(this).fadeOut();
-  });
-
 });
 
 

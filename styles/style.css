@@ -150,6 +150,10 @@ span{
     text-underline-position: under;
 }
 
+li{
+
+}
+
 
 strong{
   font-weight: 800;
@@ -200,16 +204,6 @@ strong{
   z-index: 10000;
 }
 
-#clickMovie2{
-  display: none;
-  margin-top: 6px;
-  width: 100%;
-
-margin: 0 auto;
-
-  cursor: pointer;
-  z-index: 10000;
-}
 
 
 .footerText{

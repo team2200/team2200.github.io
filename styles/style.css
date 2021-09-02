@@ -221,7 +221,8 @@ strong{
 
 
 .footerText{
-  font-size: 3.5vw;
+  font-weight: 900;
+  font-size: 48px;
   margin-left: 64px;
   color: black;
 
@@ -229,7 +230,7 @@ strong{
 
 @media screen and (min-width: 512px) {
   body {
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.6;
   }
 }

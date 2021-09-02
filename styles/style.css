@@ -159,6 +159,13 @@ span{
   z-index: 10000;
 }
 
+.footerText{
+  cursor: pointer;
+  color: yellow;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 @media screen and (min-width: 512px) {
   body {
     font-weight: 900;
@@ -173,14 +180,14 @@ body.fixed {
 
 a {
   text-decoration: none;
-  color: silver;
+  color: white;
   transition: color .25s;
   transition-delay: .125s;
   cursor: pointer;
 }
 
 a:hover {
-  color: white;
+  color: silver;
 }
 
 .header {

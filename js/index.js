@@ -48,7 +48,7 @@ $(window).on('load', function() {
                       $('html, body').scrollTop(0);
                       $('body').removeClass('fixed');
                     });
-                  }, delay * 3);
+                  }, delay * 0.8);
                 });
               }, delay);
             });
@@ -56,5 +56,5 @@ $(window).on('load', function() {
         });
       }, delay);
     }, delay);
-  }, delay * 3);
+  }, delay * 0.8);
 });

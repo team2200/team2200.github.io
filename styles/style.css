@@ -146,8 +146,16 @@ body {
 
 span{
   cursor: pointer;
-  text-decoration: underline dotted;
+  text-decoration: underline dotted orange;
     text-underline-position: under;
+    color: white;
+    transition: color .25s;
+    transition-delay: .125s;
+}
+
+span:hover{
+  color: silver;
+  text-decoration: none;
 }
 
 li{
@@ -172,7 +180,9 @@ strong{
 
 #clickBus{
   display: none;
+  position: absolute;
   margin-top: 6px;
+  left: -80px;
   width: 100%;
   cursor: pointer;
   z-index: 10000;
@@ -182,16 +192,19 @@ strong{
   display: none;
   position: absolute;
   margin-top: 8px;
-  left: 0;
-  width: 85%;
+  left: -120px;
+  background-color: whitesmoke;
+  width: 100%;
   cursor: pointer;
   z-index: 10000;
 }
 
 #clickExitL{
   display: none;
+  position: absolute;
   margin-top: 6px;
   width: 100%;
+  left: -72px;
   cursor: pointer;
   z-index: 10000;
 }
@@ -200,6 +213,7 @@ strong{
   display: none;
   margin-top: 6px;
   width: 100%;
+  left: -72px;
   cursor: pointer;
   z-index: 10000;
 }

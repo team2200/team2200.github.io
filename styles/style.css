@@ -203,8 +203,8 @@ strong {
   .imgClass6{
     position: absolute;
     display: inline-block;
-    margin: 2rem 0 15rem 0rem;
-    width: 30%;
+    margin: 0rem 0 15rem -6.5rem;
+    width: 50%;
   }
 
   .imgClass7{
@@ -308,6 +308,8 @@ summary:last-child {
   text-align: center;
   color: white;
 }
+
+
 
 .footerText {
   font-weight: 900;

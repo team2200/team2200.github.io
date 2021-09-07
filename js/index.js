@@ -1,49 +1,49 @@
-$(document).ready(function () {
-  $(".span1").click(function () {
-    $(this).fadeOut();
-    $("#clickLogo").fadeIn();
-  });
-  $("#clickLogo").click(function () {
-    $(".span1").fadeIn();
-    $(this).fadeOut();
-  });
+// $(document).ready(function () {
+//   $(".span1").click(function () {
+//     $(this).fadeOut();
+//     $("#clickLogo").fadeIn();
+//   });
+//   $("#clickLogo").click(function () {
+//     $(".span1").fadeIn();
+//     $(this).fadeOut();
+//   });
 
-  $(".span2").click(function () {
-    $(this).fadeOut();
-    $("#clickLogo2").fadeIn();
-  });
-  $("#clickLogo2").click(function () {
-    $(".span2").fadeIn();
-    $(this).fadeOut();
-  });
+//   $(".span2").click(function () {
+//     $(this).fadeOut();
+//     $("#clickLogo2").fadeIn();
+//   });
+//   $("#clickLogo2").click(function () {
+//     $(".span2").fadeIn();
+//     $(this).fadeOut();
+//   });
 
-  $(".span3").click(function () {
-    $(this).fadeOut();
-    $("#clickBus").fadeIn();
-  });
-  $("#clickBus").click(function () {
-    $(".span3").fadeIn();
-    $(this).fadeOut();
-  });
+//   $(".span3").click(function () {
+//     $(this).fadeOut();
+//     $("#clickBus").fadeIn();
+//   });
+//   $("#clickBus").click(function () {
+//     $(".span3").fadeIn();
+//     $(this).fadeOut();
+//   });
 
-  $(".span4").click(function () {
-    $(this).fadeOut();
-    $("#clickExitL").fadeIn();
-  });
-  $("#clickExitL").click(function () {
-    $(".span4").fadeIn();
-    $(this).fadeOut();
-  });
+//   $(".span4").click(function () {
+//     $(this).fadeOut();
+//     $("#clickExitL").fadeIn();
+//   });
+//   $("#clickExitL").click(function () {
+//     $(".span4").fadeIn();
+//     $(this).fadeOut();
+//   });
 
-  $(".span5").click(function () {
-    $(this).fadeOut();
-    $("#clickMovie1").fadeIn();
-  });
-  $("#clickMovie1").click(function () {
-    $(".span5").fadeIn();
-    $(this).fadeOut();
-  });
-});
+//   $(".span5").click(function () {
+//     $(this).fadeOut();
+//     $("#clickMovie1").fadeIn();
+//   });
+//   $("#clickMovie1").click(function () {
+//     $(".span5").fadeIn();
+//     $(this).fadeOut();
+//   });
+// });
 
 
 

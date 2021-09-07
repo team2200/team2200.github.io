@@ -166,7 +166,8 @@ strong {
 .imgClass2,
 .imgClass3,
 .imgClass4,
-.imgClass5 {
+.imgClass5,
+.imgClass6 {
   display: none;
 }
 
@@ -196,6 +197,20 @@ strong {
     position: absolute;
     display: inline-block;
     margin: 30rem 0 15rem -2rem;
+    width: 30%;
+  }
+
+  .imgClass6{
+    position: absolute;
+    display: inline-block;
+    margin: 2rem 0 15rem 0rem;
+    width: 30%;
+  }
+
+  .imgClass7{
+    position: absolute;
+    display: inline-block;
+    margin: 2rem 0 15rem 0rem;
     width: 30%;
   }
 }
@@ -251,7 +266,7 @@ summary:last-child {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-image: url("../images/sign1.png"); */
+  background-image: url("../images/exitLogo.png");
   background-color: #000;
   background-size: cover;
   background-position: top center;

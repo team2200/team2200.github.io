@@ -246,7 +246,7 @@ ul {
 }
 
 summary {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   padding: 0;
   margin: 1rem 0 2rem 1rem;
@@ -269,7 +269,7 @@ summary:last-child {
   background-image: url("../images/exitLogo.png");
   background-color: #000;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
 }
 
 .header::after {

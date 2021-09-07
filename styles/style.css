@@ -1,11 +1,11 @@
 ::-moz-selection {
   color: black;
-  background-color: rgba(255,255,255,.99);
+  background-color: rgba(255, 255, 255, 0.99);
 }
 
 ::selection {
   color: black;
-  background-color: rgba(255,255,255,.99);
+  background-color: rgba(255, 255, 255, 0.99);
 }
 
 html,
@@ -118,14 +118,14 @@ section {
   display: block;
 }
 
-
-
 body,
 button,
 input,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
 }
 
 code,
@@ -144,41 +144,79 @@ body {
   cursor: default;
 }
 
-span{
+span {
   cursor: pointer;
-    color: white;
-    transition: color .25s;
-    transition-delay: .125s;
+  color: white;
+  transition: color 0.25s;
+  transition-delay: 0.125s;
 }
 
-span:hover{
+span:hover {
   color: silver;
   text-decoration: none;
 }
 
-li{
-
+li {
 }
 
-
-strong{
+strong {
   font-weight: 800;
-
 }
-.imgClass{
+
+.imgClass1,
+.imgClass2,
+.imgClass3,
+.imgClass4,
+.imgClass5 {
+  display: none;
+}
+
+@media screen and (min-width: 512px) {
+
+  .imgClass1 {
+    position: absolute;
+    display: inline-block;
+    margin: 6.125rem 3rem 15rem 1.25rem;
+    width: 8%;
+  }
   
-  display: inline-block;
-  margin: 16px;
+  .imgClass2 {
+    position: absolute;
+    display: inline-block;
+    margin: 15rem 0 15rem 1.25rem;
+    width: 30%;
+  }
+  
+  .imgClass3 {
+    position: absolute;
+    display: inline-block;
+    margin: 6rem 0 15rem 7.5rem;
+    width: 15%;
+  }
+  
+  .imgClass4 {
+    position: absolute;
+    display: inline-block;
+    margin: 5.5rem 0 15rem 1.25rem;
+    width: 20%;
+  }
+  
+  .imgClass5 {
+    position: absolute;
+    display: inline-block;
+    margin: 50rem 0 15rem 1rem;
+    width: 30%;
+  }
+
 }
 
 
 
-.footerText{
+.footerText {
   font-weight: 900;
   font-size: 2rem;
   margin-left: 64px;
   color: black;
-
 }
 
 @media screen and (min-width: 512px) {
@@ -196,8 +234,8 @@ body.fixed {
 a {
   text-decoration: none;
   color: white;
-  transition: color .25s;
-  transition-delay: .125s;
+  transition: color 0.25s;
+  transition-delay: 0.125s;
   cursor: pointer;
 }
 
@@ -205,18 +243,18 @@ a:hover {
   color: silver;
 }
 
-ul{
-  margin: 0.75rem;
+ul {
+  margin: 0.75rem 0.75rem 6rem 0.75rem;
   font-size: 2rem;
   line-height: 2;
 }
 
-ul li{
+ul li {
   border-bottom: solid 1px;
   list-style: none;
 }
 
-ul li:last-child{
+ul li:last-child {
   border-bottom: solid 4px;
 }
 
@@ -227,7 +265,7 @@ ul li:last-child{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/sign1.png");
+  /* background-image: url("../images/sign1.png"); */
   background-color: #000;
   background-size: cover;
   background-position: top center;
@@ -237,11 +275,11 @@ ul li:last-child{
   content: "TEAM 2200";
   position: absolute;
   z-index: 888;
-  top: 85%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: .125rem .25rem;
-  font-size: 0.75rem;
+  padding: 0.125rem 0.25rem;
+  font-size: 2rem;
   color: white;
 }
 
@@ -276,9 +314,9 @@ ul li:last-child{
 
 .section {
   padding: 1rem;
-  opacity: .25;
-  transition: opacity .25s;
-  transition-delay: .125s;
+  opacity: 0.25;
+  transition: opacity 0.25s;
+  transition-delay: 0.125s;
 }
 
 .section:hover {
@@ -296,7 +334,7 @@ ul li:last-child{
 .content:nth-child(1)::before {
   content: "";
   position: absolute;
-  top: .375rem;
+  top: 0.375rem;
   left: 0;
   width: 2rem;
   height: 2.25rem;
@@ -319,12 +357,12 @@ ul li:last-child{
 }
 
 .content code {
-  padding: 0 .125em;
+  padding: 0 0.125em;
   font-family: Courier;
   line-height: 1;
   color: #000;
   background-color: dimgray;
-  border-radius: .125em;
+  border-radius: 0.125em;
 }
 
 .content:not(:last-child),

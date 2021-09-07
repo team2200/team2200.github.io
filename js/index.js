@@ -45,7 +45,11 @@
 //   });
 // });
 
-
+$(document).ready(function(){
+  $("#details").click(function(){
+      $("#details").toggleClass("Close");
+  });
+});
 
 $(document).ready(function() {
   $('html, body').scrollTop(0);

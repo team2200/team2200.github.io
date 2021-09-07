@@ -58,6 +58,7 @@ select {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -156,14 +157,12 @@ span:hover {
   text-decoration: none;
 }
 
-li {
-}
-
 strong {
   font-weight: 800;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
-.imgClass1,
 .imgClass2,
 .imgClass3,
 .imgClass4,
@@ -172,51 +171,33 @@ strong {
 }
 
 @media screen and (min-width: 512px) {
-
-  .imgClass1 {
-    position: absolute;
-    display: inline-block;
-    margin: 6.125rem 3rem 15rem 1.25rem;
-    width: 8%;
-  }
-  
   .imgClass2 {
     position: absolute;
     display: inline-block;
-    margin: 15rem 0 15rem 1.25rem;
-    width: 30%;
+    margin: 5rem 0rem 15rem 2rem;
+    width: 20%;
   }
-  
+
   .imgClass3 {
     position: absolute;
     display: inline-block;
-    margin: 6rem 0 15rem 7.5rem;
-    width: 15%;
+    margin: 14.5em 0rem 15rem 2rem;
+    width: 20%;
   }
-  
+
   .imgClass4 {
     position: absolute;
     display: inline-block;
-    margin: 5.5rem 0 15rem 1.25rem;
-    width: 20%;
+    margin: 2rem 0 15rem 1rem;
+    width: 25%;
   }
-  
+
   .imgClass5 {
     position: absolute;
     display: inline-block;
-    margin: 50rem 0 15rem 1rem;
+    margin: 30rem 0 15rem -2rem;
     width: 30%;
   }
-
-}
-
-
-
-.footerText {
-  font-weight: 900;
-  font-size: 2rem;
-  margin-left: 64px;
-  color: black;
 }
 
 @media screen and (min-width: 512px) {
@@ -249,13 +230,18 @@ ul {
   line-height: 2;
 }
 
-ul li {
+summary {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  padding: 0;
+  margin: 1rem 0 2rem 1rem;
   border-bottom: solid 1px;
-  list-style: none;
+  list-style: decimal;
 }
 
-ul li:last-child {
+summary:last-child {
   border-bottom: solid 4px;
+  margin-bottom: 2rem;
 }
 
 .header {
@@ -308,12 +294,21 @@ ul li:last-child {
   color: white;
 }
 
+.footerText {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-left: 64px;
+  color: black;
+}
+
 .main {
   margin-top: 100vh;
+  margin-left: 3vh;
+  width: 90%;
 }
 
 .section {
-  padding: 1rem;
+  padding: 0.5rem;
   opacity: 0.25;
   transition: opacity 0.25s;
   transition-delay: 0.125s;
@@ -327,6 +322,15 @@ ul li:last-child {
   position: relative;
 }
 
+.content .summary {
+  position: relative;
+  width: 75%;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
 .content:nth-child(1) {
   padding-left: 3rem;
 }
@@ -336,9 +340,9 @@ ul li:last-child {
   position: absolute;
   top: 0.375rem;
   left: 0;
-  width: 2rem;
+
   height: 2.25rem;
-  background-image: url("../images/qmask.png");
+  /* background-image: url("../images/qmask.png"); */
   background-size: cover;
 }
 
@@ -368,4 +372,40 @@ ul li:last-child {
 .content:not(:last-child),
 .content > *:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+#details {
+  outline: none;
+  background-color: black;
+  cursor: pointer;
+}
+#details > ol{
+  padding-left: 20px;
+}
+#details > p{
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  opacity: 1;
+  max-height: 50px;
+}
+summary {
+  outline: none;
+  background-color: black;
+}
+#details.Close summary:before{
+  content: ""
+}
+#details summary:before{
+  content: ""
+}
+#details.Close > p{
+  opacity: 0;
+  max-height: 0;
 }

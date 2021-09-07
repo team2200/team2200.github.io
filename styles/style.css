@@ -196,8 +196,8 @@ strong {
   .imgClass5 {
     position: absolute;
     display: inline-block;
-    margin: 30rem 0 15rem -2rem;
-    width: 30%;
+    margin: 30rem 0 15rem 1rem;
+    width: 25%;
   }
 
   .imgClass6{
@@ -344,6 +344,8 @@ summary:last-child {
   font-size: 0.7rem;
   font-weight: 600;
   line-height: 1.6;
+
+  padding-left: 0.75rem;
 }
 
 .content:nth-child(1) {

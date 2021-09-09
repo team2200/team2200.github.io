@@ -174,16 +174,16 @@ strong {
 @media screen and (min-width: 512px) {
   .imgClass2 {
     position: absolute;
-    display: inline-block;
-    margin: 5rem 0rem 15rem 2rem;
-    width: 20%;
+    display: block;
+    margin: 2rem 0rem 0rem 1rem;
+    width: 25%;
   }
 
   .imgClass3 {
     position: absolute;
-    display: inline-block;
-    margin: 14.5em 0rem 15rem 2rem;
-    width: 20%;
+    display: block;
+    margin: 13rem 0rem 0rem 1rem;
+    width: 25%;
   }
 
   .imgClass4 {
@@ -213,6 +213,13 @@ strong {
     margin: 2rem 0 15rem 0rem;
     width: 30%;
   }
+}
+
+img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  position: absolute;
+  z-index: 10000;
 }
 
 @media screen and (min-width: 512px) {
@@ -335,6 +342,8 @@ summary:last-child {
   opacity: 1;
 }
 
+
+
 .content {
   position: relative;
 }
@@ -400,31 +409,11 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-#details {
-  outline: none;
-  background-color: black;
-  cursor: pointer;
+details[open] summary ~ * {
+  animation: sweep .75s ease-in-out;
 }
-#details > ol{
-  padding-left: 20px;
-}
-#details > p{
-  transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
-  opacity: 1;
-  max-height: 50px;
-}
-summary {
-  outline: none;
-  background-color: black;
-}
-#details.Close summary:before{
-  content: ""
-}
-#details summary:before{
-  content: ""
-}
-#details.Close > p{
-  opacity: 0;
-  max-height: 0;
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -20px}
+  100%  {opacity: 1; margin-top: 0px}
 }

@@ -14,7 +14,7 @@ $(window).on('load', function() {
   var $header = $('.header');
   var $title = $('.title');
   var $main = $('.main');
-  var delay = 1000;
+  var delay = 750;
   setTimeout(function() {
     $title.fadeIn(delay);
     setTimeout(function() {
@@ -37,7 +37,7 @@ $(window).on('load', function() {
                       $('html, body').scrollTop(0);
                       $('body').removeClass('fixed');
                     });
-                  }, delay * 0.8);
+                  }, delay * 0.7);
                 });
               }, delay);
             });
@@ -45,5 +45,5 @@ $(window).on('load', function() {
         });
       }, delay);
     }, delay);
-  }, delay * 0.8);
+  }, delay * 0.7);
 });

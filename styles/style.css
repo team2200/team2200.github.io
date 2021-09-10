@@ -340,10 +340,9 @@ summary:last-child {
 }
 
 .footerText {
+  font-size: 1.5rem;
+  line-height: 1.5;
   font-weight: 900;
-  font-size: 2rem;
-  margin-left: 64px;
-  color: black;
 }
 
 .main {

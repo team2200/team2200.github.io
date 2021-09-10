@@ -171,6 +171,36 @@ strong {
   display: none;
 }
 
+.imgClass2 {
+  display: block;
+  margin: 0rem 0 0.75rem 3.5rem;
+  width: 30%;
+}
+
+.imgClass3 {
+  display: block;
+  margin: 0rem 0 0rem 3.5rem;
+  width: 30%;
+}
+
+.imgClass4 {
+  display: block;
+  margin: 0rem 0 0.75rem 3.5rem;
+  width: 45%;
+}
+
+.imgClass5 {
+  display: block;
+  margin: 0rem 0 1rem 3.5rem;
+  width: 45%;
+}
+
+.imgClass6 {
+  display: block;
+  margin: -5rem 0 -5rem -2.5rem;
+  width: 100%;
+}
+
 @media screen and (min-width: 512px) {
   .imgClass2 {
     position: absolute;
@@ -200,26 +230,19 @@ strong {
     width: 25%;
   }
 
-  .imgClass6{
+  .imgClass6 {
     position: absolute;
     display: inline-block;
     margin: 0rem 0 15rem -6.5rem;
     width: 50%;
   }
 
-  .imgClass7{
+  img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
     position: absolute;
-    display: inline-block;
-    margin: 2rem 0 15rem 0rem;
-    width: 30%;
+    z-index: 10000;
   }
-}
-
-img:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  position: absolute;
-  z-index: 10000;
 }
 
 @media screen and (min-width: 512px) {
@@ -256,7 +279,7 @@ summary {
   font-size: 1.25rem;
   line-height: 1.55;
   padding: 0;
-  margin: .75rem 0 1.5rem 0.5rem;
+  margin: 0.75rem 0 1.5rem 0.5rem;
   border-bottom: solid 2px;
   list-style: decimal;
 }
@@ -316,8 +339,6 @@ summary:last-child {
   color: white;
 }
 
-
-
 .footerText {
   font-weight: 900;
   font-size: 2rem;
@@ -341,8 +362,6 @@ summary:last-child {
 .section:hover {
   opacity: 1;
 }
-
-
 
 .content {
   position: relative;
@@ -404,22 +423,27 @@ summary:last-child {
 
 details > summary {
   list-style: none;
+  cursor: pointer;
 }
 details > summary::-webkit-details-marker {
   display: none;
 }
 
 details[open] summary ~ * {
-  animation: sweep .75s ease-in-out;
-  
+  animation: sweep 0.75s ease-in-out;
 }
 
 details[close] summary ~ * {
-  animation: sweep .75s ease-in-out;
-  
+  animation: sweep 0.75s ease-in-out;
 }
 
 @keyframes sweep {
-  0%    {opacity: 0; margin-top: -20px}
-  100%  {opacity: 1; margin-top: 0px}
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }

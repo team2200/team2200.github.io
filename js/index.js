@@ -1,3 +1,5 @@
+// * grateful for 2021. 09. 09. (c) minguhong, minguhong@gmail.com //
+
 $(document).ready(function() {
   $('html, body').scrollTop(0);
   $content = $('.content');

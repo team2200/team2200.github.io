@@ -1,4 +1,4 @@
-// * grateful for 2021. 09. 09. (c) minguhong, minguhong@gmail.com //
+// * grateful for (c) minguhong, 2021. 09. 14. //
 
 $(document).ready(function() {
   $('html, body').scrollTop(0);
